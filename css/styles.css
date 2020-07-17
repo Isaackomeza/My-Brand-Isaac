@@ -125,7 +125,63 @@ body::after{
  }
  /*Login form*/
  .login-form{
-     height: 80vh;
-     width: 70vw;
+     height: 40vh;
+     width: 40vw;
+     background-color: #D4D9E9;
+     margin: 3rem 0rem 3rem 17rem;
+     padding: 8rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     box-shadow: 0 10px 20px black;
+     border-radius: 5px;
  }
+input{
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.login-form button{
+    padding: 0.4rem;
+    background-color: royalblue;
+    border: royalblue;
+    border-radius: 5px;
+}
+.login-form p{
+    text-align: center;
+}
+.login-form h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Sign Up Page*/
+.signup-form{
+    height: 50vh;
+    width: 40vw;
+    background-color: #D4D9E9;
+    margin: 3rem 0rem 3rem 17rem;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 20px black;
+    border-radius: 5px;
+}
+input{
+   padding: 0.5rem;
+   border-radius: 5px;
+}
+.signup-form button{
+   padding: 0.4rem;
+   background-color: royalblue;
+   border: royalblue;
+   border-radius: 5px;
+}
+.signup-form p{
+   text-align: center;
+}
+.signup-form h1{
+   text-align: center;
+   text-transform: uppercase;
+}
 
