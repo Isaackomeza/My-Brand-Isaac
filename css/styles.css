@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: #17202A;
+	position: sticky;
+	top: 0;
+	padding: 1rem 3rem;
+    z-index: 2;
+    
+}
+
+header a{
+	padding: 2rem;
+	text-decoration: none;
+    color:white;
+    font-size: 1.25rem;
+}
+
+#bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+#home{
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid rgb(94, 91, 91);
+    padding-bottom: 3rem;
+    
+}
+body::after{
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color:  #5495DE;
+	opacity: 0.8;
+	z-index: -1;
+}
+#profile{
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.divider-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #0a0a0a;
+    border-radius: 1rem;
+    border-color: #0a0a0a;
+  }
+
+  .divider{
+    margin: 1.25rem 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo{
+      width: 2.5rem;
+      height: 2.5rem;
+      vertical-align: middle;
+  }
+  .brand a{
+    display: inline-b;
+  }
+  .fa-star{
+      margin: 0 1rem;
+      color: #0a0a0a;
+  }
+  #about{
+      text-align: center;
+
+      color: white;
+
+      padding: 3rem 0;
+  }
+  #about h1{
+    margin-bottom: 3rem;
+  }
+  #about a{
+      margin-top: 3rem;
+      padding: 0.5rem 2rem;
+      border: 1px solid white;
+      border-radius: 7px;
+      text-decoration: none;
+      color: white;
+  }
+  .real-me{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 4rem 0;
+
+  }
+  .real-me > div{
+      width: 30vw;
+      padding: 3rem;
+      box-shadow: 0 10px 20px black;
+      border-radius: 2em;
+  }
+  footer{
+      background-color: #17202A;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 2rem 0rem;
+      align-items: center;
+
+  }
+ .data, .location{
+     text-align: center;
+ }
+ /*Login form*/
+ .login-form{
+     height: 80vh;
+     width: 70vw;
+ }
+
