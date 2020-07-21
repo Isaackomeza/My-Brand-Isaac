@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Contact Page</title>
 </head>
 <body>
@@ -23,8 +24,8 @@
                 </nav>
             </div>
         </header>
-            <div class="contact-page">
-                <h1>Would you like to talk to us?</h1>
+            <div data-aos="zoom-in" data-aos-duration="2000" class="contact-page">
+                <h1>Would you like to talk to me?</h1>
                 <label for="name">Name :</label>
                 <input type="text" name="name" id="name" placeholder="Enter your Name"><br>
                 <label for="email">Email :</label>
@@ -34,9 +35,13 @@
                 <label for="message">Message :</label>
                 <textarea name="Message" id="message" cols="30" rows="10" placeholder="Write your Message here"></textarea><br>
                <button>Send Message</button>
-               <h2>You can also reach us through :</h2>
-               <span>+250788620148</span>
-               <span>isaackomeza@gmail.com</span>
+               <h2>You can also reach me through :</h2>
+               <section>
+                
+                <span><i class="fas fa-phone"></i>+250788620148</span>
+                <span><i class="fas fa-envelope-open"></i>isaackomeza@gmail.com</span>
+               </section>
+
             </div>
             <footer>
                 <div class="location">
@@ -54,5 +59,9 @@
                 </div>
             </footer>   
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -302,6 +302,7 @@ margin-top: 1em;
 }
 .contact-page h2{
     text-align: center;
+    margin-top: 1em;
 }
 textarea{
    border-radius: 10px;
@@ -315,4 +316,13 @@ textarea{
     border-radius: 50px;
     width: 10vw;
     margin: 0 auto;
+}
+.contact-page section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.contact-page i{
+    padding-right: 1em;
+    color: teal;
 }
