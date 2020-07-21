@@ -69,7 +69,7 @@ body::after{
     align-items: center;
   }
   #logo{
-      width: 2.5rem;
+      width: 3rem;
       height: 2.5rem;
       vertical-align: middle;
   }
@@ -107,8 +107,9 @@ body::after{
   .real-me > div{
       width: 30vw;
       padding: 3rem;
-      box-shadow: 0 10px 20px black;
+      box-shadow: 0 3px 5px rgb(26, 25, 25);
       border-radius: 2em;
+      background-color: #5495DE;
   }
   footer{
       background-color: #17202A;
@@ -123,28 +124,97 @@ body::after{
  .data, .location{
      text-align: center;
  }
+ .data a{
+    margin-right: 0.5em;
+ }
+ .fa-facebook{
+     color: blue;
+     border: 1px solid white;
+     border-radius: 50%;
+     padding: 6px 3px;
+ }
+ .fa-twitter{
+    color: cornflowerblue;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 6px 3px;
+ }
+ .fa-google{
+     color: firebrick;
+ }
+ .fa-linkedin-in{
+    color: rgb(53, 53, 187);
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 6px 3px;
+ }
+ .fa-github{
+     color: rgb(207, 205, 205);
+     border: 1px solid white;
+     border-radius: 50%;
+     padding: 6px 3px;
+ }
+
+ /*My Blog*/
+ .blog-container{
+     background-color: gainsboro;
+     height: 70vh;
+     display: flex;
+     align-items: center;
+ }
+ .blog-container > div{
+     width: 50%;
+     margin-left: 5em;
+     
+ }
+ .blog-container h1{
+    font-size: 3em;
+ }
+ .blog-container p{
+     font-size: 1.3em;
+ }
+ .blog-container a{
+    font-size: 1.5em;
+    border: 2px solid rgb(104, 104, 158);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    color: darkslateblue;
+ }
+ .form {
+     display: flex;
+     justify-content: space-evenly;
+ }
  /*Login form*/
+ .login-container{
+    background-image: linear-gradient(20deg, #27bce2 , #af43f5);
+ }
  .login-form{
-     height: 40vh;
-     width: 40vw;
-     background-color: #D4D9E9;
-     margin: 3rem 0rem 3rem 17rem;
-     padding: 8rem;
+     height: 50vh;
+     width: 25vw;
+     background-color: white;
+     margin: 0 auto;
+     padding: 8rem 4rem;
      display: flex;
      flex-direction: column;
      justify-content: center;
-     box-shadow: 0 10px 20px black;
+     box-shadow: 0 3px 5px rgb(26, 25, 25);
      border-radius: 5px;
+     margin-top: 2rem;
+     margin-bottom: 2rem;
  }
-input{
+ input{
     padding: 0.5rem;
     border-radius: 5px;
-}
+    border: none;
+    border-bottom: 2px solid rgb(151, 147, 147);
+    outline-style: none;
+ }
 .login-form button{
     padding: 0.4rem;
-    background-color: royalblue;
+    background-image: linear-gradient(to right, #27bce2 , #af43f5);
     border: royalblue;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 .login-form p{
     text-align: center;
@@ -152,6 +222,16 @@ input{
 .login-form h1{
     text-align: center;
     text-transform: uppercase;
+}
+.account{
+text-align: center;
+margin-top: 1em;
+    
+}
+.account span{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
 }
 
 /*Sign Up Page*/
@@ -167,10 +247,7 @@ input{
     box-shadow: 0 10px 20px black;
     border-radius: 5px;
 }
-input{
-   padding: 0.5rem;
-   border-radius: 5px;
-}
+
 .signup-form button{
    padding: 0.4rem;
    background-color: royalblue;
