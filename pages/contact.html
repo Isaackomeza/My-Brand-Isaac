@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Login Form</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Contact Page</title>
 </head>
 <body>
     <div class="login-container">
@@ -17,27 +18,29 @@
             <div>
                 <nav>
                     <a href="">Projects</a>
-                    <a href="#about">About</a>
+                    <a href="../index.html">About</a>
                     <a href="contact.html">Contact</a>
                     <a href="blog.html">My Blog</a>
                 </nav>
             </div>
         </header>
-    
-            <div class="login-form">
-                    <h1>Log In Form</h1><br>
-                    <label for="username">Username:</label><br>
-                    <input type="text" placeholder="Enter Username" id="username"><br><br>
-                    <label for="password">Password:</label><br>
-                    <input type="text" placeholder="Enter Password" id="password"><br><br>
-                    <button>Log In</button><br>
-                    <p>Don't have an account? <a href="signup.html">Sign Up</a></p><br>
-                    <p>Or Sign Up Using:</p>
-                <section class="account">  
-                    <span><i class="fab fa-2x fa-facebook"></i></span>
-                    <span><i class="fab fa-2x fa-twitter"></i></span>
-                    <span><i class="fab fa-2x fa-google"></i></span>
-                </section>
+            <div data-aos="zoom-in" data-aos-duration="2000" class="contact-page">
+                <h1>Would you like to talk to me?</h1>
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name"><br>
+                <label for="email">Email :</label>
+                <input type="email" name="Email" id="email" placeholder="Enter your Email"><br>              
+                <label for="number">Phone Number :</label>
+                <input type="number" placeholder="Enter Your Phone Number"><br>
+                <label for="message">Message :</label>
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Write your Message here"></textarea><br>
+               <button>Send Message</button>
+               <h2>You can also reach me through :</h2>
+               <section>
+                
+                <span><i class="fas fa-phone"></i>+250788620148</span>
+                <span><i class="fas fa-envelope-open"></i>isaackomeza@gmail.com</span>
+               </section>
 
             </div>
             <footer>
@@ -54,7 +57,11 @@
                     <a href="https://twitter.com/IsaacLee03" target="_blank"><i class="fab fa-2x fa-fw fa-twitter"></i></a>
                     <a href="https://github.com/Isaackomeza/" target="_blank"><i class="fab fa-2x fa-fw fa-github"></i></a>
                 </div>
-            </footer>
+            </footer>   
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
