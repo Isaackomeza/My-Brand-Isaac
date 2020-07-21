@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>My Blog</title>
 </head>
 <body class="blog-wrap">
@@ -23,15 +24,41 @@
         </div>
     </header>
     <div class="blog-container">
-        <div>
-        <h1>Welcome to My Blog</h1><br>
-        <p>To access my blog you just need to login if you Already have an account, but if you don't have an account Register(Sign-Up) first </p>
+        <div class="intro">
+            <div>
+                <h1>Welcome to My Blog</h1><br>
+                <p>To access my blog you just need to login if you Already have an account, but if you don't have an account Register(Sign-Up) first </p>
+            </div>
+            <div class="form">
+                <section><a href="signup.html">Sign Up</a></section>
+                <span>Or</span>
+                <section><a href="login.html">Log In</a></section>
+            </div>
         </div>
-        <div class="form">
-        <section><a href="signup.html">Sign Up</a></section>
-        <span>Or</span>
-        <section><a href="login.html">Log In</a></section>
+        <h1>Recent Articles</h1>
+        <div class="articles">
+            
+            <div data-aos="zoom-in-up" data-aos-duration="2000">
+                <h2>Lorem Ipsum</h2>
+                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <section>
+                    <span><button>Read more</button></span>
+                    <span>Comments : 4</span>
+                    <span>Posted by: Isaac</span>
+                </section>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-duration="2000">
+                <h2>Lorem Ipsum</h2>
+                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <section>
+                    <span><button>Read more</button></span>
+                    <span>Comments : 3</span>
+                    <span>Posted by: Isaac</span>
+                </section>
+
+            </div>
         </div>
+
         
     </div>
     <footer>
@@ -49,6 +76,9 @@
             <a href="https://github.com/Isaackomeza/" target="_blank"><i class="fab fa-2x fa-fw fa-github"></i></a>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

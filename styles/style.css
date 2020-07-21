@@ -157,15 +157,43 @@ body::after{
 
  /*My Blog*/
  .blog-container{
-     background-color: gainsboro;
-     height: 70vh;
+     background-color: white;
+     height: 100%;
      display: flex;
+     flex-direction: column;
      align-items: center;
  }
- .blog-container > div{
+ .intro , .articles{
+     margin: 3em;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .articles div{
+    box-shadow: 0 3px 5px rgb(26, 25, 25);
+     padding: 1rem 2rem;
+     width: 43%;
+     border-radius: 10px;
+     background-color: whitesmoke;
+ }
+ .articles section{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 2em;
+     color: #528ac5;
+ }
+ .articles button{
+     padding: 0.3em 0.7em;
+     border-radius: 5px;
+     background-color: #528ac5;
+     border: #528ac5;
+ }
+ .articles h2{
+     color: #528ac5;
+ }
+ .intro div{
      width: 50%;
-     margin-left: 5em;
-     
  }
  .blog-container h1{
     font-size: 3em;
