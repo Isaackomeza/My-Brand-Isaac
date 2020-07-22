@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Contact Page</title>
+    <title>Contact Me</title>
 </head>
 <body>
     <div class="login-container">
@@ -16,12 +16,17 @@
                 <a href="../index.html">Home</a>
             </div>
             <div>
-                <nav>
+                <nav class="nav">
                     <a href="">Projects</a>
                     <a href="../index.html">About</a>
                     <a href="contact.html">Contact</a>
                     <a href="blog.html">My Blog</a>
                 </nav>
+            </div>
+            <div class="toggle-menu" onclick="toggle(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
         </header>
             <div data-aos="zoom-in" data-aos-duration="2000" class="contact-page">
@@ -49,7 +54,7 @@
                     <span>KG 11 Ave,</span><br>
                     <span>Kigali/Rwanda</span><b></b>
                 </div>
-                <div>Copyright © Portfolio 2020</div>
+                <div class="copy">Copyright © Portfolio 2020</div>
                 <div class="data">
                     <span>FOLLOW ME</span><br><br>
                     <a href="https://www.linkedin.com/in/isaac-komezusenge-2bba21175/" target="_blank"><i class="fab fa-2x fa-fw fa-linkedin-in"></i></a>
@@ -59,6 +64,7 @@
                 </div>
             </footer>   
     </div>
+    <script src="../scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
