@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>My Brand</title>
 </head>
 <body class="container">
-    <header>
+    <header class="header">
         <div class="brand">
             <img id="logo" src="assets/images/logo.png" alt="Logo">
             <a href="index.html">Home</a>
         </div>
         <div>
-            <nav>
+            <nav class="nav">
                 <a href="">Projects</a>
                 <a href="#about">About</a>
                 <a href="pages/contact.html">Contact</a>
                 <a href="pages/blog.html">My Blog</a>
             </nav>
         </div>
+        <div class="toggle-menu" onclick="toggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </header>
     <div class="container">
         <img id="bg" src="assets/images/portfolio-image.jpg" alt="bg">
-        <div id="home">           
+        <div data-aos="zoom-in" data-aos-duration="2000" id="home">           
             <img id="profile" src="assets/images/pic123.jpg" alt="Picture">
             <h1>Isaac Komezusenge</h1>
             <h2>Software Developer</h2>
@@ -53,13 +59,13 @@
             <a href="">View My Skills</a>
         </div>
     </div>
-    <footer>
+    <footer class="footer">
         <div class="location">
             <span>LOCATION</span><br><hr>
             <span>KG 11 Ave,</span><br>
             <span>Kigali/Rwanda</span><b></b>
         </div>
-        <div>Copyright © Portfolio 2020</div>
+        <div class="copy">Copyright © Portfolio 2020</div>
         <div class="data">
             <span>FOLLOW ME :</span><br><br>
             <a href="https://www.linkedin.com/in/isaac-komezusenge-2bba21175/" target="_blank"><i class="fab fa-2x fa-fw fa-linkedin-in"></i></a>
@@ -68,6 +74,10 @@
             <a href="https://github.com/Isaackomeza/" target="_blank"><i class="fab fa-2x fa-fw fa-github"></i></a>
         </div>
     </footer>
-    
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

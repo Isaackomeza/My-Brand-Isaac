@@ -15,24 +15,29 @@
             <a href="../index.html">Home</a>
         </div>
         <div>
-            <nav>
-                <a href="">Projects</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-                <a href="">My Blog</a>
+            <nav class="nav">
+                <a href="projects.html">Projects</a>
+                <a href="../index.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">sign up</a>
+                <a href="login.html">log in</a>
             </nav>
+        </div>
+        <div class="toggle-menu" onclick="toggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
     </header>
     <div class="blog-container">
         <div class="intro">
             <div>
                 <h1>Welcome to My Blog</h1><br>
-                <p>To access my blog you just need to login if you Already have an account, but if you don't have an account Register(Sign-Up) first </p>
-            </div>
-            <div class="form">
-                <section><a href="signup.html">Sign Up</a></section>
-                <span>Or</span>
-                <section><a href="login.html">Log In</a></section>
+                <p>To access my blog you just need to login if you Already have an account, but if you don't have an account Register(Sign-Up) first 
+                    </section><a href="signup.html">Sign Up</a>
+                    <span>Or</span>
+                    <a href="login.html">Log In</a>
+                </p>
             </div>
         </div>
         <h1>Recent Articles</h1>
@@ -40,20 +45,20 @@
             
             <div data-aos="zoom-in-up" data-aos-duration="2000">
                 <h2>Lorem Ipsum</h2>
-                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <a href="#">Read More</a> </p>
                 <section>
-                    <span><button>Read more</button></span>
-                    <span>Comments : 4</span>
-                    <span>Posted by: Isaac</span>
+                    <span>Comments : 2</span>
+                    <span>Published 10:30AM 20/July/2020</span>
+                    <span>Author: Isaac</span>
                 </section>
             </div>
             <div data-aos="zoom-in-up" data-aos-duration="2000">
                 <h2>Lorem Ipsum</h2>
-                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <a href="#">Read More</a> </p>
                 <section>
-                    <span><button>Read more</button></span>
                     <span>Comments : 3</span>
-                    <span>Posted by: Isaac</span>
+                    <span>Published 11:23AM 21/July/2020</span>
+                    <span>Author: Isaac</span>
                 </section>
 
             </div>
@@ -67,7 +72,7 @@
             <span>KG 11 Ave,</span><br>
             <span>Kigali/Rwanda</span><b></b>
         </div>
-        <div>Copyright © Portfolio 2020</div>
+        <div class="copy">Copyright © Portfolio 2020</div>
         <div class="data">
             <span>FOLLOW ME :</span><br><br>
             <a href="https://www.linkedin.com/in/isaac-komezusenge-2bba21175/" target="_blank"><i class="fab fa-2x fa-fw fa-linkedin-in"></i></a>
@@ -76,6 +81,7 @@
             <a href="https://github.com/Isaackomeza/" target="_blank"><i class="fab fa-2x fa-fw fa-github"></i></a>
         </div>
     </footer>
+    <script src="../scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
