@@ -22,6 +22,12 @@ header a{
 	text-decoration: none;
     color:white;
     font-size: 1.25rem;
+    text-transform: uppercase;
+}
+header a:hover{
+	
+    color:rgb(94, 137, 202);
+    font-size: 1.4rem;
 }
 .toggle-menu{
     display: none;
@@ -194,25 +200,19 @@ body::after{
 
  /*My Blog*/
  .blog-container{
-     background-color: white;
+     background-color: whitesmoke;
      height: 100%;
      display: flex;
      flex-direction: column;
      align-items: center;
  }
- .intro , .articles{
-     margin: 3em;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-between;
- }
+
  .articles div{
     box-shadow: 0 3px 5px rgb(26, 25, 25);
      padding: 1rem 2rem;
-     width: 43%;
+     margin: 3em;
      border-radius: 10px;
-     background-color: whitesmoke;
+     background-color: white;
  }
  .articles section{
      display: flex;
@@ -220,17 +220,15 @@ body::after{
      margin-top: 2em;
      color: #528ac5;
  }
- .articles button{
-     padding: 0.3em 0.7em;
-     border-radius: 5px;
-     background-color: #528ac5;
-     border: #528ac5;
- }
+
  .articles h2{
      color: #528ac5;
  }
- .intro div{
-     width: 50%;
+ .intro{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    width: 90%;
  }
  .blog-container h1{
     font-size: 3em;
@@ -239,11 +237,9 @@ body::after{
      font-size: 1.3em;
  }
  .blog-container a{
-    font-size: 1.5em;
-    border: 2px solid rgb(104, 104, 158);
+    font-size: 1em;
     text-decoration: none;
     padding: 0.5em 1em;
-    border-radius: 10px;
     color: darkslateblue;
  }
  .form {
@@ -380,7 +376,7 @@ textarea{
 }
 .contact-page section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 1rem;
     
 }
@@ -389,7 +385,14 @@ textarea{
     color: teal;
 }
 /*Responsive*/
-@media (max-width: 800px){
+@media (max-width: 783px){
+    .contact-page section{
+        display: block;
+
+        
+    }
+}
+@media (max-width: 805px){
     .nav{
         display: none;
     }
@@ -419,6 +422,12 @@ textarea{
       .real-me > div{
         padding: 1rem;
     }
+
+    }
+    @media (max-width: 1050px){
+        .contact-page , .signup-form , .login-form{
+            width: 60vw;
+        }
     }
     @media (max-width: 600px){
 
