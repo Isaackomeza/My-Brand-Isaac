@@ -8,7 +8,7 @@ font-family: 'Poppins', sans-serif;
 header{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+    justify-content: space-between;
 	background: #17202A;
 	position: sticky;
 	top: 0;
@@ -18,19 +18,25 @@ header{
 }
 
 header a{
-	padding: 1.5rem;
+    padding-right: 2.5rem;
 	text-decoration: none;
     color:white;
     font-size: 1.25rem;
     text-transform: uppercase;
 }
+
 header a:hover{
 	
     color:rgb(94, 137, 202);
-    font-size: 1.4rem;
 }
 .toggle-menu{
     display: none;
+}
+#logo{
+    width: 3rem;
+    height: 2.5rem;
+    vertical-align: middle;
+    margin-right: 1rem;
 }
 
 /*Nav menu */
@@ -107,14 +113,6 @@ body::after{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #logo{
-      width: 3rem;
-      height: 2.5rem;
-      vertical-align: middle;
-  }
-  .brand a{
-    display: inline-b;
   }
   .fa-star{
       margin: 0 1rem;
@@ -246,6 +244,58 @@ body::after{
      display: flex;
      justify-content: space-evenly;
  }
+ /*Blog post*/
+.post-container{
+    background-color: white;
+    padding: 3rem 8rem;
+}
+.post-title{
+    display: flex;
+    
+}
+.post-title h1{
+    color: cornflowerblue;
+}
+.published{
+    display: flex;
+    justify-content: space-between;
+    color: cornflowerblue;
+}
+.fa-edit{
+    padding: 0.4rem 1rem 0 0;
+    color: blue;
+}
+.icon{
+    color: blue;
+}
+.awesome{
+    
+    display: flex;
+}
+.awesome div{
+    padding-right: 2rem;
+}
+textarea{
+    width: 30rem;
+    height: 15rem;
+}
+.message{
+    display: flex;
+}
+.message div{
+    align-items: center;
+    justify-content: space-between;
+}
+.message button{
+    padding: 0.4rem 4rem;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    border: none;
+}
+#message-image{
+    height: 20rem;
+    width: 35rem;
+}
 
  /*Login form*/
  .login-container{
@@ -385,12 +435,12 @@ textarea{
     padding-right: 1em;
     color: teal;
 }
+
 /*Responsive*/
 @media (max-width: 783px){
     .contact-page section{
         display: block;
-
-        
+  
     }
 }
 @media (max-width: 805px){
@@ -445,3 +495,4 @@ textarea{
             padding: 2em 0em;
           }
     }
+
