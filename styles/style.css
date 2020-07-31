@@ -270,6 +270,9 @@ body::after{
    grid-template-rows: 1fr 1fr;
    grid-gap: 3em;
 }
+.skills h2{
+    text-transform: uppercase;
+}
 .skill-title{
     display: flex;
     margin-bottom: 1rem;
@@ -279,6 +282,23 @@ body::after{
     padding: 2rem;
     box-shadow: 0 3px 5px rgb(26, 25, 25);
     border-radius: 10px;  
+}
+.skills-icon > div{
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 3px 5px rgb(26, 25, 25);
+    border-radius: 10px; 
+}
+.skills-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    width: 100%;
+}
+.skills-icon img{
+    height: 3.5em;
+    width: 3.5em;
+    margin-right: 1.5em;
 }
  /*Login form*/
  .login-container{
