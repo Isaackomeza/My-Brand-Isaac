@@ -18,8 +18,6 @@ function toggle(x) {
     elMenu.classList.toggle('change');
   }
 
-
-
   
   document.getElementById('contactForm').addEventListener('submit', submitForm);
 
@@ -65,5 +63,6 @@ function saveMessage(name, email, number, message){
   })
 
 }
+
 
 

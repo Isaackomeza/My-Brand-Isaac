@@ -28,23 +28,32 @@
                 <div class="bar3"></div>
             </div>
         </header>
-    
-            <div class="login-form">
-                    <h1>Log In Form</h1><br>
-                    <label for="username">Username:</label><br>
-                    <input type="text" placeholder="Enter Username" id="username"><br><br>
-                    <label for="password">Password:</label><br>
-                    <input type="text" placeholder="Enter Password" id="password"><br><br>
-                    <button>Log In</button><br>
-                    <p>Don't have an account? <a href="signup.html">Sign Up</a></p><br>
-                    <p>Or Sign Up Using:</p>
-                <section class="account">  
-                    <span><i class="fab fa-2x fa-facebook"></i></span>
-                    <span><i class="fab fa-2x fa-twitter"></i></span>
-                    <span><i class="fab fa-2x fa-google"></i></span>
-                </section>
+        <div class="login-form" >
+            <div id="login">
+              <h1>Log In Form</h1><br>
+              <form action=""id="login" >
+                   <label for="email">Email:</label><br>
+                   <input type="text" placeholder="Enter Username" id="email"><br><br>
+                   <label for="password">Password:</label><br>
+                   <input type="text" placeholder="Enter Password" id="password"><br><br>
+                   <button id="loginbtn" onclick="logIn(); return false;" >Log In</button><br><br>
+              </form> 
 
-            </div>
+               <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+               <p>Or Log In with:</p>
+           <section class="account">  
+               <span><i class="fab fa-2x fa-facebook"></i></span>
+               <span><i class="fab fa-2x fa-twitter"></i></span>
+               <span><i class="fab fa-2x fa-google"></i></span>
+           </section>
+            </div>  
+
+          <div id="user-field">
+              <h2>Welcome User</h2>
+              <p id="user_para">Welcome, You are currently logged in</p>
+              <button  id="logoutbtn" onclick="logOut()">Logout</button>
+          </div>
+      </div>
             <footer>
                 <div class="location">
                     <span>LOCATION</span><br><hr>
@@ -61,6 +70,10 @@
                 </div>
             </footer>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="../scripts/auth.js"></script>
     <script src="../scripts/script.js"></script>
 </body>
 </html>
