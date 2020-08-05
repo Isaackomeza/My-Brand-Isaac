@@ -30,15 +30,18 @@
         </header>
             <div class="signup-form">
                 <h1>Sign Up Form</h1><br>
-                <label for="username">Username :</label>
-                <input type="text" placeholder="Enter Username" id="username"><br>
-                <label for="email">Email Adress :</label>
-                <input type="email" name="Email" id="email" placeholder="Enter Your Email"><br>
-                <label for="password">Password :</label>
-                <input type="password" placeholder="Enter Password" id="password"><br>
-                <label for="password2">Confirm Password :</label>
-                <input type="password" placeholder="Enter Your Password Again" id="password2"><br><br>
-                <button>Sign Up</button><br>
+                <form action="">
+                    <label for="username">Username :</label>
+                    <input type="text" placeholder="Enter Username" id="username"><br><br>
+                    <label for="email">Email Adress :</label>
+                    <input type="email" name="Email" id="email" placeholder="Enter Your Email"><br><br>
+                    <label for="password">Password :</label>
+                    <input type="password" placeholder="Enter Password" id="password"><br><br>
+                    <label for="password2">Confirm Password :</label>
+                    <input type="password" placeholder="Enter Your Password Again" id="password2"><br><br>
+                    <button id="signupbtn" >Sign Up</button><br>
+                </form>
+
                 <p>Already have an account? <a href="login.html">Log In</a></p>
             </div>
             <footer>
@@ -57,6 +60,9 @@
                 </div>
             </footer>   
     </div>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="../scripts/auth.js"></script>
     <script src="../scripts/script.js"></script>
 </body>
 </html>

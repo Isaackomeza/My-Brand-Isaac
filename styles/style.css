@@ -408,7 +408,7 @@ textarea{
     width: 35vw;
     background-color: white;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -416,18 +416,27 @@ textarea{
     border-radius: 5px;
     margin-top: 2rem;
     margin-bottom: 2rem;
- }
- .login-form > input{
-    padding: 0.5rem;
+    height: 100%;
+}
+
+.login-form input{
+    padding: 0.5rem 0.5rem 0.5rem 0;
     border: none;
     border-bottom: 1px solid rgb(151, 147, 147);
     outline-style: none;
+    width: 100%;
+
  }
 .login-form button{
     padding: 0.4rem;
     background-image: linear-gradient(to right, #27bce2 , #af43f5);
     border: royalblue;
     border-radius: 50px;
+    width: 100%;
+    outline-style: none;
+}
+.login-form button:hover{
+    background-image: linear-gradient(to right, #af43f5,  #27bce2);
 }
 .login-form p{
     text-align: center;
@@ -438,12 +447,19 @@ textarea{
 }
 .account{
 text-align: center;
-margin-top: 1em;
     
 }
 .account span{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+#user-field{
+    text-align: center;
+    display: none;
+    height: 40vh;
+    
+}
+#login{
     
 }
 
@@ -452,32 +468,39 @@ margin-top: 1em;
     background-image: linear-gradient(20deg, #27bce2 , #af43f5);
  }
  .signup-form{
-     width: 35vw;
-     background-color: white;
-     margin: 0 auto;
-     padding: 3rem;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     box-shadow: 0 3px 5px rgb(26, 25, 25);
-     border-radius: 5px;
-     margin-top: 2rem;
-     margin-bottom: 2rem;
- }
- .signup-form > input{
-    padding: 0.5rem;
+    width: 35vw;
+    background-color: white;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 3px 5px rgb(26, 25, 25);
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 100%;
+}
+
+.signup-form input{
+    padding: 0.5rem 0.5rem 0.5rem 0;
     border: none;
     border-bottom: 1px solid rgb(151, 147, 147);
     outline-style: none;
+    width: 100%;
+
  }
 .signup-form button{
     padding: 0.4rem;
     background-image: linear-gradient(to right, #27bce2 , #af43f5);
     border: royalblue;
     border-radius: 50px;
+    width: 100%;
+   
 }
 .signup-form p{
     text-align: center;
+    padding-top: 2em;
 }
 .signup-form h1{
     text-align: center;
