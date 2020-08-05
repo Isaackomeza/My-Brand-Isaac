@@ -522,11 +522,13 @@ text-align: center;
     margin-bottom: 2rem;
     height: 100%;
 }
+
 .contact-page input{
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
     border: none;
     border-bottom: 1px solid rgb(151, 147, 147);
     outline-style: none;
+    width: 100%;
 
  }
  .contact-page h1{
@@ -540,16 +542,18 @@ text-align: center;
     margin-top: 1em;
 }
 textarea{
-   border-radius: 10px;
-   border: 1px solid rgb(121, 119, 119);
-   padding: 1rem;
-}
-.contact-page button{
+    border-radius: 10px;
+    border: 1px solid rgb(121, 119, 119);
+    padding: 1rem;
+    width: 100%;
+ }
+ .contact-page button{
     padding: 0.4rem;
     background-image: linear-gradient(to right, #27bce2 , #af43f5);
     border: royalblue;
     border-radius: 50px;
-
+    width: 100%;
+    outline: none;
 }
 .contact-page section{
     display: flex;
@@ -560,6 +564,15 @@ textarea{
 .contact-page i{
     padding-right: 1em;
     color: teal;
+}
+.alert{
+    text-align: center;
+    padding: 10px;
+    background: rgb(33, 33, 194);
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+    border-radius: 10px;
 }
 
 /*Responsive*/
