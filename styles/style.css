@@ -496,7 +496,7 @@ text-align: center;
     border: royalblue;
     border-radius: 50px;
     width: 100%;
-   
+    outline-style: none;
 }
 .signup-form p{
     text-align: center;
@@ -506,6 +506,19 @@ text-align: center;
     text-align: center;
     text-transform: uppercase;
 }
+.form-div.success input {
+    border-color: blue;
+  }
+.form-div.error input {
+    border-color: red;
+  }
+.form-div small {
+    color: red;
+    visibility: hidden;
+  }
+.form-div.error small {
+    visibility: visible;
+  }
 /*End*/
 /*Contact Page*/
 .contact-page{

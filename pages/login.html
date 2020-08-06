@@ -32,10 +32,17 @@
             <div id="login">
               <h1>Log In Form</h1><br>
               <form action=""id="login" >
-                   <label for="email">Email:</label><br>
-                   <input type="text" placeholder="Enter Username" id="email"><br><br>
-                   <label for="password">Password:</label><br>
-                   <input type="text" placeholder="Enter Password" id="password"><br><br>
+                   <div class="form-div">
+                    <label for="email">Email:</label><br>
+                    <input type="text" placeholder="Enter Username" id="email">
+                    <small>Error message</small><br><br>
+                   </div>
+                   <div class="form-div">
+                    <label for="password">Password:</label><br>
+                    <input type="text" placeholder="Enter Password" id="password">
+                    <small>Error message</small><br><br>
+                   </div>
+
                    <button id="loginbtn" onclick="logIn(); return false;" >Log In</button><br><br>
               </form> 
 
@@ -44,7 +51,7 @@
            <section class="account">  
                <span><i class="fab fa-2x fa-facebook"></i></span>
                <span><i class="fab fa-2x fa-twitter"></i></span>
-               <span><i class="fab fa-2x fa-google"></i></span>
+               <span><i class="fab fa-2x fa-google" onclick="googleLogIn();"></i></span>
            </section>
             </div>  
 
@@ -74,6 +81,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
     <script src="../scripts/auth.js"></script>
+    <script src="../scripts/login.js"></script>
     <script src="../scripts/script.js"></script>
 </body>
 </html>
