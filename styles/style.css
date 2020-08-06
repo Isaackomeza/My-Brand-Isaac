@@ -575,25 +575,57 @@ textarea{
 
 /*Admin's Page*/
 .admin-container{
-    background-color: white;
+    background-color: #F7F9F9;
     
 }
 .admin-intro{
     text-align: center;
 }
+.admin-intro img{
+    border-radius: 110px;
+}
+.admin-intro button{
+    padding: 0.5em 5em;
+    margin-bottom: 2em;
+    font-size: 1.3m;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+}
+.nav span{
+    text-transform:  capitalize !important;
+}
 #table{
     vertical-align: middle;
     width: 60vw;
-    
+    font-size: 18px;
+    border-radius: 5px;
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+  td{
+      text-align: center;
+  }
+  tr >td:first-child{
+      text-align: left;
+  }
+  th{
+      padding: 3px;
+      font-size: 20px;
+  }
+  tr > th:first-child{
+      text-align: left;
+  }
+  .table-container caption{
+      text-transform: uppercase;
+      margin-bottom: 1em;
+  }
 .table-container{
-    background-color: #ECF0F1;
+    background-color: #F7F9F9;
     width: 70vw;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2em 2em 3em 2em;
     display: flex;
     justify-content: center;
     box-shadow: 0 3px 5px rgb(26, 25, 25);
@@ -601,16 +633,73 @@ tr:nth-child(even) {
 }
 .admin-form{
     width: 70vw;
-    background-color: #ECF0F1;
+    background-color: white;
     margin: 0 auto;
     padding: 3rem;
     box-shadow: 0 3px 5px rgb(26, 25, 25);
     border-radius: 5px;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    
+    text-align: left !important;
+    
+}
+.admin-form input{
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 90%;
+}
+.input-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.input-area img{
+    width: 90%;
+    height: 10em;
+
+}
+.admin-form-container{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.admin-form-container button{
+    padding: 1em 6em;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3m;
+    margin-top: 2em;
+    
+}
+.admin-form{
+    border-top: 2px solid #F7F9F9;
 }
 .admin-form input{
     display: block;
+    border: 1px solid black;
+    outline-style: none;
+}
+.admin-form input:focus{
+    border: 1px solid #1f07f7;
+}
+textarea:focus{
+    border: 1px solid #1f07f7;
+    outline-style: none;
+}
+.user-comment textarea{
+    width: 80%;
+    height: 6rem;
+    border-radius: 7px;
+    
+}
+.user-comment h3{
+    background-color: rgb(243, 240, 240);
+    margin: 0 auto;
+    border-radius:  30px 30px 0px 0 ;
+    width: 30%;
+    
+}
+.admin-messages {
+    text-align: center;
 }
 
 

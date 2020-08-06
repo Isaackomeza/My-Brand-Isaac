@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Admin's Page</title>
 </head>
-<body class="post1-wrap">
+<body class="admin-wrapper">
     <header>
         <div class="brand">
             <img id="logo" src="../assets/images/logo.svg" alt="Logo">
@@ -19,7 +19,7 @@
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
                 <a href="blog.html">My Blog</a>
-                <a href="#"><i class="fas fa-user-circle"></i></a>
+                <a href="#"><i class="fas fa-user-circle"></i><span>Admin</span></a>
             </nav>
         </div>
         <div class="toggle-menu" onclick="toggle(this)">
@@ -37,7 +37,7 @@
             <table border="1" cellspacing="0" id="table">
                 <caption><b>Lists of Blogs</b></caption><br/>
                     <tr>
-                        <th>Blog Summary</th>
+                        <th>Blog Title</th>
                         <th>Date of Publication</th>
                         <th>Edit Blog</th>
                         <th>Delete Blog</th>
@@ -65,20 +65,51 @@
                     </tr>
             </table>
         </div>
-        <div>
+        <div class="admin-form-container">
             <button>Add New Article</button>
             <form action="" class="admin-form">
-                <div>
-                    <label for="author">Author</label>
-                    <input id="author"  type="text" placeholder="Put Author's name here">
+                <div class="input-area">
+                    <div>
+                        <div>
+                            <label for="author">Author</label>
+                            <input id="author"  type="text" placeholder="Put Author's name here"><br>
+                        </div>
+                        <div>
+                            <label for="title">Blog Title</label>
+                            <input type="text" placeholder="Write a blog Title here" id="title" ><br>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="../assets/images/blogimage.jpg" alt="blog-image">
+                    </div>
                 </div>
-                <div>
-                    <label for="title">Blog Title</label>
-                    <input type="text" placeholder="Write a blog Title here" id="title" >
-                </div>
+
                 <label for="blog">Blog</label>
                 <textarea name="blog" id="blog" cols="30" rows="10" placeholder="Write a full description of your blog"></textarea>
             </form>
+        </div>
+        <div></div>
+        <div class="admin-messages">
+            <h2>Messages</h2>
+            <div class="user-comment">
+                <div >
+                    <div>
+                        <h3>John</h3>
+                    </div>
+                </div>
+                <textarea name="" id="" cols="30" rows="10">This is a wonderful topic I liked it. Vel turpis nunc eget lorem. Congue quisque egestas diam in arcu cursus euismod quis viverra.</textarea>
+            </div>
+            <div class="user-comment">
+                <div >
+                    <div>
+                        <h3>Grace</h3>
+                    </div>
+                </div>
+
+                <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nibh mauris cursus mattis molestie a iaculis at erat. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus.</textarea>
+            </div>
+
         </div>
     </div>
     <footer>
@@ -87,7 +118,7 @@
             <span>KG 11 Ave,</span><br>
             <span>Kigali/Rwanda</span><b></b>
         </div>
-        <div class="copy">Copyright © Portfolio 2020</div>
+        <div class="copy">Copyright © Isaac 2020</div>
         <div class="data">
             <span>FOLLOW ME :</span><br><br>
             <a href="https://www.linkedin.com/in/isaac-komezusenge-2bba21175/" target="_blank"><i class="fab fa-2x fa-fw fa-linkedin-in"></i></a>
