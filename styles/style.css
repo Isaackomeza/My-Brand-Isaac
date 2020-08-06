@@ -589,7 +589,7 @@ textarea{
 /*Admin's Page*/
 .admin-container{
     background-color: #F7F9F9;
-    
+    height: 100%;
 }
 .admin-intro{
     text-align: center;
@@ -656,6 +656,14 @@ tr:nth-child(even) {
     text-align: left !important;
     
 }
+.admin-form button{
+    padding: 0.3em 5em;
+    margin-bottom: 2em;
+    font-size: 1.3m;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+}
 .admin-form input{
     padding: 0.5em;
     border-radius: 5px;
@@ -674,17 +682,22 @@ tr:nth-child(even) {
     text-align: center;
     margin-bottom: 2em;
 }
-.admin-form-container button{
+#displayed{
     padding: 1em 6em;
     background-color: cornflowerblue;
     border: none;
     border-radius: 5px;
     font-size: 1.3m;
     margin-top: 2em;
-    
+    outline-style: none;
+ 
+}
+.btn-div{
+    text-align: center;
 }
 .admin-form{
     border-top: 2px solid #F7F9F9;
+    display: none;
 }
 .admin-form input{
     display: block;
@@ -713,8 +726,17 @@ textarea:focus{
 }
 .admin-messages {
     text-align: center;
+    padding-bottom: 2em;
 }
-
+.blog-alert{
+    text-align: center;
+    padding: 10px;
+    background: rgb(33, 33, 194);
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+    border-radius: 10px;
+}
 
 /*Responsive*/
 @media (max-width: 783px){
