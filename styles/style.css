@@ -459,9 +459,7 @@ text-align: center;
     height: 40vh;
     
 }
-#login{
-    
-}
+
 
 /*Sign Up Page*/
 .login-container{
@@ -574,6 +572,47 @@ textarea{
     display: none;
     border-radius: 10px;
 }
+
+/*Admin's Page*/
+.admin-container{
+    background-color: white;
+    
+}
+.admin-intro{
+    text-align: center;
+}
+#table{
+    vertical-align: middle;
+    width: 60vw;
+    
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+.table-container{
+    background-color: #ECF0F1;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 5px rgb(26, 25, 25);
+    border-radius: 7px;
+}
+.admin-form{
+    width: 70vw;
+    background-color: #ECF0F1;
+    margin: 0 auto;
+    padding: 3rem;
+    box-shadow: 0 3px 5px rgb(26, 25, 25);
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.admin-form input{
+    display: block;
+}
+
 
 /*Responsive*/
 @media (max-width: 783px){

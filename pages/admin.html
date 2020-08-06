@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Admin's Page</title>
+</head>
+<body class="post1-wrap">
+    <header>
+        <div class="brand">
+            <img id="logo" src="../assets/images/logo.svg" alt="Logo">
+            <a href="../index.html">Home</a>
+        </div>
+        <div>
+            <nav class="nav">
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="blog.html">My Blog</a>
+                <a href="#"><i class="fas fa-user-circle"></i></a>
+            </nav>
+        </div>
+        <div class="toggle-menu" onclick="toggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+    <div class="admin-container">
+        <div class="admin-intro">
+            <div><img src="../assets/images/avatar.jpg" alt="Avatar"></div>
+            <div><button>Edit Profile</button></div>  
+        </div>
+        <div class="table-container">
+            <table border="1" cellspacing="0" id="table">
+                <caption><b>Lists of Blogs</b></caption><br/>
+                    <tr>
+                        <th>Blog Summary</th>
+                        <th>Date of Publication</th>
+                        <th>Edit Blog</th>
+                        <th>Delete Blog</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>How can You Learn Javascript in 2 months</td>
+                        <td>05<sup>th</sup>-08-2020, 21:05</td>
+                        <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png"/></td>
+                        <td><img src="https://img.icons8.com/color/48/000000/delete-forever.png"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Why is it important to do sport</td>
+                        <td>05<sup>th</sup>-08-2020, 21:05</td>
+                        <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png"/></td>
+                        <td><img src="https://img.icons8.com/color/48/000000/delete-forever.png"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>How can I prevent Covid-19 infection</td>
+                        <td>05<sup>th</sup>-08-2020, 21:05</td>
+                        <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png"/></td>
+                        <td><img src="https://img.icons8.com/color/48/000000/delete-forever.png"/></td>
+                    </tr>
+            </table>
+        </div>
+        <div>
+            <button>Add New Article</button>
+            <form action="" class="admin-form">
+                <div>
+                    <label for="author">Author</label>
+                    <input id="author"  type="text" placeholder="Put Author's name here">
+                </div>
+                <div>
+                    <label for="title">Blog Title</label>
+                    <input type="text" placeholder="Write a blog Title here" id="title" >
+                </div>
+                <label for="blog">Blog</label>
+                <textarea name="blog" id="blog" cols="30" rows="10" placeholder="Write a full description of your blog"></textarea>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="location">
+            <span>LOCATION</span><br><hr>
+            <span>KG 11 Ave,</span><br>
+            <span>Kigali/Rwanda</span><b></b>
+        </div>
+        <div class="copy">Copyright © Portfolio 2020</div>
+        <div class="data">
+            <span>FOLLOW ME :</span><br><br>
+            <a href="https://www.linkedin.com/in/isaac-komezusenge-2bba21175/" target="_blank"><i class="fab fa-2x fa-fw fa-linkedin-in"></i></a>
+            <a href="https://web.facebook.com/komezusenge.isaac.7" target="_blank"><i class="fab fa-2x fa-fw fa-facebook"></i></a>
+            <a href="https://twitter.com/IsaacLee03" target="_blank"><i class="fab fa-2x fa-fw fa-twitter"></i></a>
+            <a href="https://github.com/Isaackomeza/" target="_blank"><i class="fab fa-2x fa-fw fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
