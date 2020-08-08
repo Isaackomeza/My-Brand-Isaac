@@ -315,6 +315,9 @@ body::after{
 }
 
  /*Blog post*/
+ #full-blog{
+white-space: pre-wrap;
+ }
 .post-container{
     background-color: white;
     padding: 3rem 8rem;
@@ -337,6 +340,9 @@ body::after{
     justify-content: space-between;
     color: cornflowerblue;
 }
+.published small{
+    font-size: 1.2em;
+}
 .fa-edit{
     padding-right: 1rem;
     color: blue;
@@ -352,8 +358,9 @@ body::after{
     padding-right: 2rem;
 }
 textarea{
-    width: 30rem;
+    width: 40rem;
     height: 8rem;
+    margin-top: 1em;
 }
 .message{
     display: flex;
@@ -363,10 +370,11 @@ textarea{
     justify-content: space-between;
 }
 .message input{
-    width: 30rem;
+    width: 40rem;
     margin-top: 1em;
     padding: 0.4em;
     border-radius: 5px;
+    border: 1px solid black;
 }
 .message button{
     padding: 0.4rem 4rem;
@@ -697,7 +705,7 @@ tr:nth-child(even) {
 }
 .admin-form{
     border-top: 2px solid #F7F9F9;
-    display: none;
+    display: non;
 }
 .admin-form input{
     display: block;

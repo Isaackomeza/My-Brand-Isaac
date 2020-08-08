@@ -1,6 +1,7 @@
 const db = firebase.firestore();
 document.getElementById('admin-form').addEventListener('submit', submitBlog);
-const messagesUI= document.querySelector('.admin-messages')
+const messagesUI= document.querySelector('.admin-messages');
+
 
 function submitBlog(e){
   e.preventDefault();
@@ -29,7 +30,7 @@ function getInputVal(id){
 return document.getElementById(id).value;
 }
 
-// save message to firebase
+// save Blog to firebase
 function saveBlog(author, title, description){
 db.collection('Blogs').doc().set({
   author: author,
