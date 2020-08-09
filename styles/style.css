@@ -318,7 +318,7 @@ body::after{
  .post1-wrap{
     height: 100%;
  }
- #full-blog{
+ #full-blog, #summary{
 white-space: pre-wrap;
  }
 .post-container{
@@ -640,7 +640,7 @@ textarea{
     border-radius: 5px;
     
 }
-table,
+
 th,
 td {
   border: 1px solid black;
@@ -694,6 +694,9 @@ tr:nth-child(even) {
     background-color: cornflowerblue;
     border: none;
     border-radius: 5px;
+}
+.update{
+    display:none;
 }
 
 .admin-form button{
@@ -850,4 +853,5 @@ textarea:focus{
             padding: 2em 0em;
           }
     }
+
 

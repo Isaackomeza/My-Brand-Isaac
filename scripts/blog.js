@@ -1,26 +1,25 @@
- // Get blog ui summary
+const db = firebase.firestore();
+const blogUI = document.querySelector('.articles');
+
+// Get blog ui summary
  const getBlogUI = (data)=>{
-    let ui= `
-    <caption><b>Lists of Blogs</b></caption><br/>
-    <tr>
-        <th>Blog Title</th>
-        <th>Date of Publication</th>
-        <th>Edit Blog</th>
-        <th>Delete Blog</th>
-    </tr>
-    `;
+    let ui="";
     data.forEach(item=>{
-      const blog =item.data();
+    const blog= item.data()
+      const description =blog.description.slice(0,200)
       //console.log(item.id)
       console.log(blog);
       let blogUIFormat =`
    
-          <tr>
-              <td>${blog.title}</td>
-              <td>${blog.date}</td>
-              <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png"/></td>
-              <td><img onclick="deleteBlog(${item.id})" id="${item.id}" src="https://img.icons8.com/color/48/000000/delete-forever.png"/></td>
-          </tr>
+    <div data-aos="fade-right" data-aos-duration="1500">
+      <h2>${blog.title}</h2>
+      <p id="summary">${description}<a href="post1.html">Read More<i class="fas fa-angle-double-right"></i></a> </p>
+      <section>
+          <span>Comments : 2</span>
+          <span>Published: ${blog.date}</span>
+          <span>Author: ${blog.author}</span>
+      </section>
+    </div>
       `
       ui+=blogUIFormat
     })

@@ -90,16 +90,19 @@
                 <div class="blog-alert">Wao!! Your Blog has been saved</div>
                 <button type="submit">Save</button>
             </form>
+        </div>
+        <div class="update">
+
             <form action="" class="admin-update-form" id="admin-update-form">
                 <div class="input-area">
                     <div>
                         <div>
                             <label for="author">Author</label>
-                            <input id="author"  type="text" placeholder="Put Author's name here"><br>
+                            <input id="update-author"  type="text" placeholder="Put Author's name here"><br>
                         </div>
                         <div>
                             <label for="title">Blog Title</label>
-                            <input type="text" placeholder="Write a blog Title here" id="blog-title" ><br>
+                            <input type="text" placeholder="Write a blog Title here" id="update-blog-title" ><br>
                         </div>
                     </div>
 
@@ -108,8 +111,7 @@
                     </div>
                 </div>
                 <label for="blog">Blog Description</label>
-                <textarea name="blog" id="blog-description" cols="30" rows="10" placeholder="Write a full description of your blog"></textarea>
-                <div class="update-blog-alert">Blog updated successfully</div>
+                <textarea name="blog" id="update-blog-description" cols="30" rows="10" placeholder="Write a full description of your blog"></textarea>
                 <button type="submit" onclick="update()";>Update Article</button>
             </form>
         </div>
