@@ -320,7 +320,10 @@ white-space: pre-wrap;
  }
 .post-container{
     background-color: white;
-    padding: 3rem 8rem;
+    padding: 0rem 8rem;
+}
+.published-blog{
+    padding-top: 3em;
 }
 .post-container p{
     text-align: justify;
@@ -360,7 +363,7 @@ white-space: pre-wrap;
 textarea{
     width: 40rem;
     height: 8rem;
-    margin-top: 1em;
+    
 }
 .message{
     display: flex;
@@ -391,6 +394,7 @@ textarea{
     width: 100%;
     height: 6rem;
     border-radius: 2px;
+    
 }
 .latest-comment h3{
     background-color: rgb(243, 240, 240);
