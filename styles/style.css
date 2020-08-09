@@ -235,11 +235,11 @@ body::after{
      width: 100%;
      height: 100%;
  }
- .intro div:first-child{
+ .intro div{
      width: 100%;
  }
  .blog-container h1{
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Roboto', sans-serif;
  }
  .blog-container p{
@@ -315,12 +315,16 @@ body::after{
 }
 
  /*Blog post*/
+ .post1-wrap{
+    height: 100%;
+ }
  #full-blog{
 white-space: pre-wrap;
  }
 .post-container{
     background-color: white;
     padding: 0rem 8rem;
+    
 }
 .published-blog{
     padding-top: 3em;
@@ -374,7 +378,7 @@ textarea{
 }
 .message input{
     width: 40rem;
-    margin-top: 1em;
+    margin-bottom: 1em;
     padding: 0.4em;
     border-radius: 5px;
     border: 1px solid black;
@@ -395,6 +399,15 @@ textarea{
     height: 6rem;
     border-radius: 2px;
     
+}
+.comment-alert{
+    text-align: center;
+    padding: 10px;
+    background: rgb(33, 33, 194);
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+    border-radius: 10px;
 }
 .latest-comment h3{
     background-color: rgb(243, 240, 240);
@@ -625,6 +638,12 @@ textarea{
     width: 60vw;
     font-size: 18px;
     border-radius: 5px;
+    
+}
+table,
+th,
+td {
+  border: 1px solid black;
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
@@ -693,6 +712,7 @@ tr:nth-child(even) {
 .admin-form-container{
     text-align: center;
     margin-bottom: 2em;
+    display: none;
 }
 #displayed{
     padding: 1em 6em;
@@ -787,8 +807,10 @@ textarea:focus{
       .real-me > div{
         padding: 1rem;
     }
-
+    .intro{
+        display: block;
     }
+}
     @media (max-width: 1050px){
         .contact-page , .signup-form , .login-form{
             width: 60vw;

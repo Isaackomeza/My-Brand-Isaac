@@ -55,13 +55,14 @@
                     </div><br>
                 
                 <div class="message">
-                    <div>
-                        <label for="message">Leave Your Comment:</label>
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Email">
-                        <textarea name="comment" id="message" cols="30" rows="10" placeholder="Write your comment here"></textarea>
-                        <button>Send</button>
-                    </div>           
+                    <form id="comment-form">
+                        <label for="comment-message">Leave Your Comment:</label>
+                        <input type="text" placeholder="Your Name" id="comment-name">
+                        <input type="email" placeholder="Email" id="comment-email">
+                        <textarea name="comment" id="comment-message" cols="30" rows="10" placeholder="Write your comment here"></textarea>
+                        <div class="comment-alert">Your comment is sent</div>
+                        <button type="submit" id="comment-btn" onclick="submitComment(); return false;">Send</button>
+                    </form>           
                     <div><img id="message-image" src="../assets/images/comment.svg" alt="Write"></div>
                 </div>
         </div>   
