@@ -675,7 +675,7 @@ tr:nth-child(even) {
     box-shadow: 0 3px 5px rgb(26, 25, 25);
     border-radius: 7px;
 }
-.admin-form{
+.admin-form, .admin-update-form{
     width: 70vw;
     background-color: white;
     margin: 0 auto;
@@ -687,6 +687,15 @@ tr:nth-child(even) {
     text-align: left !important;
     
 }
+.admin-update-form button{
+    padding: 0.3em 5em;
+    margin-bottom: 2em;
+    font-size: 1.3m;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+}
+
 .admin-form button{
     padding: 0.3em 5em;
     margin-bottom: 2em;
@@ -696,6 +705,11 @@ tr:nth-child(even) {
     border-radius: 5px;
 }
 .admin-form input{
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 90%;
+}
+.admin-update-form input{
     padding: 0.5em;
     border-radius: 5px;
     width: 90%;
@@ -732,6 +746,11 @@ tr:nth-child(even) {
     display: non;
 }
 .admin-form input{
+    display: block;
+    border: 1px solid black;
+    outline-style: none;
+}
+.admin-update-form input{
     display: block;
     border: 1px solid black;
     outline-style: none;

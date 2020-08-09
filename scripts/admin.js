@@ -135,15 +135,4 @@ function deleteBlog(e){
   })
 }
 
-// Updating Blog
 
-function updateBlog(e){
-  let id=e.getAttribute('id')
-  db.collection('Blogs').doc(id).update().then(()=>{
-    alert('Blog deleted');
-  }).then(()=>{
-    db.collection("Blogs").get().then(info=>{
-      getBlogUI(info.docs)
-    });
-  })
-}
