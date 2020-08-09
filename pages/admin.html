@@ -65,9 +65,10 @@
                     </tr>
             </table>
         </div>
-        <div class="admin-form-container">
-            <button>Add New Article</button>
-            <form action="" class="admin-form">
+        <div class="btn-div"><button onclick="display()"; id="displayed">Add New Article</button></div>
+        <div class="admin-form-container" id="admin-form-container">
+            
+            <form action="" class="admin-form" id="admin-form">
                 <div class="input-area">
                     <div>
                         <div>
@@ -76,7 +77,7 @@
                         </div>
                         <div>
                             <label for="title">Blog Title</label>
-                            <input type="text" placeholder="Write a blog Title here" id="title" ><br>
+                            <input type="text" placeholder="Write a blog Title here" id="blog-title" ><br>
                         </div>
                     </div>
 
@@ -84,33 +85,13 @@
                         <img src="../assets/images/blogimage.jpg" alt="blog-image">
                     </div>
                 </div>
-
-                <label for="blog">Blog</label>
-                <textarea name="blog" id="blog" cols="30" rows="10" placeholder="Write a full description of your blog"></textarea>
+                <label for="blog">Blog Description</label>
+                <textarea name="blog" id="blog-description" cols="30" rows="10" placeholder="Write a full description of your blog"></textarea>
+                <div class="blog-alert">Wao!! Your Blog has been saved</div>
+                <button type="submit">Save</button>
             </form>
         </div>
-        <div></div>
-        <div class="admin-messages">
-            <h2>Messages</h2>
-            <div class="user-comment">
-                <div >
-                    <div>
-                        <h3>John</h3>
-                    </div>
-                </div>
-                <textarea name="" id="" cols="30" rows="10">This is a wonderful topic I liked it. Vel turpis nunc eget lorem. Congue quisque egestas diam in arcu cursus euismod quis viverra.</textarea>
-            </div>
-            <div class="user-comment">
-                <div >
-                    <div>
-                        <h3>Grace</h3>
-                    </div>
-                </div>
-
-                <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nibh mauris cursus mattis molestie a iaculis at erat. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus.</textarea>
-            </div>
-
-        </div>
+        <div class="admin-messages"></div>
     </div>
     <footer>
         <div class="location">
@@ -127,7 +108,11 @@
             <a href="https://github.com/Isaackomeza/" target="_blank"><i class="fab fa-2x fa-fw fa-github"></i></a>
         </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/admin.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
