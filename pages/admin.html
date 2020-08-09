@@ -34,7 +34,7 @@
             <div><button>Edit Profile</button></div>  
         </div>
         <div class="table-container">
-            <table border="1" cellspacing="0" id="table">
+            <table  cellspacing="0" id="table">
                 <caption><b>Lists of Blogs</b></caption><br/>
                     <tr>
                         <th>Blog Title</th>
@@ -43,7 +43,7 @@
                         <th>Delete Blog</th>
                     </tr>
                     
-                    <tr>
+                    <tr class="table-container-tr">
                         <td>How can You Learn Javascript in 2 months</td>
                         <td>05<sup>th</sup>-08-2020, 21:05</td>
                         <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png"/></td>
@@ -89,6 +89,30 @@
                 <textarea name="blog" id="blog-description" cols="30" rows="10" placeholder="Write a full description of your blog"></textarea>
                 <div class="blog-alert">Wao!! Your Blog has been saved</div>
                 <button type="submit">Save</button>
+            </form>
+        </div>
+        <div class="update">
+
+            <form action="" class="admin-update-form" id="admin-update-form">
+                <div class="input-area">
+                    <div>
+                        <div>
+                            <label for="author">Author</label>
+                            <input id="update-author"  type="text" placeholder="Put Author's name here"><br>
+                        </div>
+                        <div>
+                            <label for="title">Blog Title</label>
+                            <input type="text" placeholder="Write a blog Title here" id="update-blog-title" ><br>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="../assets/images/blogimage.jpg" alt="blog-image">
+                    </div>
+                </div>
+                <label for="blog">Blog Description</label>
+                <textarea name="blog" id="update-blog-description" cols="30" rows="10" placeholder="Write a full description of your blog"></textarea>
+                <button type="submit" onclick="update()";>Update Article</button>
             </form>
         </div>
         <div class="admin-messages"></div>
