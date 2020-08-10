@@ -39,7 +39,6 @@ const getBlogUI = (data)=>{
             <div class="comment-alert">Your comment is sent</div>
             <button type="submit" id="comment-btn" onclick="submitComment(); return false;">Send</button>
           </form>           
-          <div><img id="message-image" src="../assets/images/comment.svg" alt="Write"></div>
         </div>
       </div>   
         <div>
@@ -55,20 +54,7 @@ const getBlogUI = (data)=>{
                     </div>
                 </div>
                 <textarea name="" id="" cols="30" rows="10">This is a wonderful topic I liked it. Vel turpis nunc eget lorem. Congue quisque egestas diam in arcu cursus euismod quis viverra.</textarea>
-            </div>
-            <div class="latest-comment">
-                <div class="argment">
-                    <div>
-                        <h3>Confiance</h3>
-                    </div>
-                    <div class="feeling">
-                        <i class="icon fas fa-thumbs-up"></i><span>0</span>
-                        <i class="icon fas fa-thumbs-down"></i><span>0</span>
-                        <i class="icon fas fa-reply"></i><span>0</span>
-                    </div>
-                </div>
-                <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nibh mauris cursus mattis molestie a iaculis at erat. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus.</textarea>
-        </div>
+          </div>
     </div>
       `
       ui+=blogUIFormat
