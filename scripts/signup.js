@@ -5,6 +5,11 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
 const signUpBtn = document.querySelector('#signupbtn');
+const db= firebase.firestore()
+db.collection("contact").get().then(info=>{
+  console.log(info)
+})
+
 
 // Show input error message
 function showError(input, message) {
@@ -64,19 +69,46 @@ function checkPasswordsMatch(input1, input2) {
 
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
-      window.location.href = '../pages/blog.html';
+      alert('User is currently signed in')
+      // window.location.href = '../pages/post1.html';
+    
+    document.getElementById('logout').style.display='inline-block';
     } else {
       console.log('User not sign in');
+      alert('User is currently signed out')
+      document.getElementById('logout').style.display='none';
     }
   });
 
 signUpBtn.addEventListener('click', e=>{
     e.preventDefault();
-    // Integrating with firebase
-    const userEmail = document.getElementById('email').value;
-    const userPass = document.getElementById('password').value;
+    var userEmail = document.getElementById('email').value;
+    var userPass = document.getElementById('password').value;
+    var userName = username.value;
+    let lat;
+    let long;
+    if('geolocation' in navigator){
+      console.log('Location available')
+      navigator.geolocation.getCurrentPosition(position=>{
+        lat = position.coords.latitude
+        long = position.coords.longitude
+      })
+    }
     const promise = firebase.auth().createUserWithEmailAndPassword(userEmail, userPass);
-    promise.then(user=> console.log(user))
+    promise.then(user=>{
+      return db.collection('users').doc(user.user.uid).set({    
+        username: userName,
+        password: userPass,
+        email: userEmail,
+        role:'admin',
+        location: {
+          latitude: lat,
+          longitude: long
+        }
+    })
+
+    })
+    console.log(userName)
     promise.catch(e=> console.log(e.message));
     // checking for validation
     checkRequired([username, email, password, password2]);
@@ -84,5 +116,14 @@ signUpBtn.addEventListener('click', e=>{
     checkLength(password, 6, 25);
     checkEmail(email);
     checkPasswordsMatch(password, password2);
-    
+    form.reset();
   });
+
+  const logout = document.querySelector('#logout');
+logout.addEventListener('click', (e) => {
+  e.preventDefault();
+  firebase.auth().signOut();
+});
+
+
+

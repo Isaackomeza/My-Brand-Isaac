@@ -31,3 +31,4 @@ const blogUI = document.querySelector('.articles');
   db.collection("Blogs").get().then(info=>{
     getBlogUI(info.docs)
   });
+

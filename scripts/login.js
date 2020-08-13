@@ -1,3 +1,4 @@
+const db = firebase.firestore();
 const provider = new firebase.auth.GoogleAuthProvider();
 
 // Show input error message
@@ -77,6 +78,22 @@ firebase.auth().onAuthStateChanged(function(user) {
     // window.alert('works');
     firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(userInfo=>{
         console.log(userInfo)
+        db.collection("users").where("email", "==", userEmail)
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            // doc.data() is never undefined for query doc snapshots
+            console.log(doc.id, " => ", doc.data());
+            if (doc.data().role == 'admin'){
+              window.location.href='admin.html';
+            }else{
+              window.location.href='post1.html';
+            }
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
     }).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
@@ -118,3 +135,5 @@ firebase.auth().onAuthStateChanged(function(user) {
   function logOut(){
     firebase.auth().signOut();
   }
+
+ 
