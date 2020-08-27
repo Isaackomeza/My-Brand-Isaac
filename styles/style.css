@@ -16,6 +16,9 @@ top: 0;
 padding: 1rem 3rem;
 z-index: 2;
 }
+#logout{
+    display: none;
+}
 
 header a{
 padding-right: 2.5rem;
