@@ -21,7 +21,6 @@ const db=firebase.firestore()
 
   auth.onAuthStateChanged(user=>{
     if(user){
-        console.log("Hello from user:", user.uid, user.role)
         db.collection('users').doc(user.uid).get().then(info=>{
           console.log(info.data().role)
           if(info.data().role == 'admin'){
@@ -39,7 +38,6 @@ const db=firebase.firestore()
           logoBtn.style.display="none"
           admin.style.display= 'none' 
           logBtn.style.display= 'inline-block'
-          profileP.style.display='none'
         }
       })
 

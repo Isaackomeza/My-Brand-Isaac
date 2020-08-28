@@ -105,10 +105,9 @@ signUpBtn.addEventListener('click', e=>{
           latitude: lat,
           longitude: long
         }
-    })
+    });
 
-    })
-    console.log(userName)
+    });
     promise.catch(e=> console.log(e.message));
     // checking for validation
     checkRequired([username, email, password, password2]);
@@ -117,6 +116,7 @@ signUpBtn.addEventListener('click', e=>{
     checkEmail(email);
     checkPasswordsMatch(password, password2);
     form.reset();
+    alert('Signed in successfully');
   });
 
 //   const logout = document.querySelector('#logout');
