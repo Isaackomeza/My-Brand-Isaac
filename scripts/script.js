@@ -7,9 +7,9 @@ function toggle(x) {
   }
 
   
-  function logOut(){
-    firebase.auth().signOut();
-  }
+  // function logOut(){
+  //   firebase.auth().signOut();
+  // }
 
 
 

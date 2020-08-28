@@ -1,4 +1,4 @@
-const db = firebase.firestore();
+// const db = firebase.firestore();
 document.getElementById('admin-form').addEventListener('submit', submitBlog);
 const messagesUI= document.querySelector('.admin-messages');
 const blogUI = document.querySelector('#table');

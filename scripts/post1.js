@@ -1,4 +1,4 @@
-const db = firebase.firestore();
+// const db = firebase.firestore();
 const blogUI = document.querySelector('.post-container');
 
 // document.getElementById('comment-form').addEventListener('submit', submitComment);

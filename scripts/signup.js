@@ -5,7 +5,7 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
 const signUpBtn = document.querySelector('#signupbtn');
-const db= firebase.firestore()
+// const db= firebase.firestore()
 db.collection("contact").get().then(info=>{
   console.log(info)
 })
@@ -67,19 +67,6 @@ function checkPasswordsMatch(input1, input2) {
     }
   }
 
-  firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
-      alert('User is currently signed in')
-      // window.location.href = '../pages/post1.html';
-    
-    document.getElementById('logout').style.display='inline-block';
-    } else {
-      console.log('User not sign in');
-      alert('User is currently signed out')
-      document.getElementById('logout').style.display='none';
-    }
-  });
-
 signUpBtn.addEventListener('click', e=>{
     e.preventDefault();
     var userEmail = document.getElementById('email').value;
@@ -88,7 +75,6 @@ signUpBtn.addEventListener('click', e=>{
     let lat;
     let long;
     if('geolocation' in navigator){
-      console.log('Location available')
       navigator.geolocation.getCurrentPosition(position=>{
         lat = position.coords.latitude
         long = position.coords.longitude
@@ -100,15 +86,14 @@ signUpBtn.addEventListener('click', e=>{
         username: userName,
         password: userPass,
         email: userEmail,
-        role:'admin',
+        role:'user',
         location: {
           latitude: lat,
           longitude: long
         }
-    })
+    });
 
-    })
-    console.log(userName)
+    });
     promise.catch(e=> console.log(e.message));
     // checking for validation
     checkRequired([username, email, password, password2]);
@@ -117,13 +102,12 @@ signUpBtn.addEventListener('click', e=>{
     checkEmail(email);
     checkPasswordsMatch(password, password2);
     form.reset();
+    alert('Signed in successfully');
   });
 
-  const logout = document.querySelector('#logout');
-logout.addEventListener('click', (e) => {
-  e.preventDefault();
-  firebase.auth().signOut();
-});
+
+
+
 
 
 
