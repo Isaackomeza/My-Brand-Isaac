@@ -67,19 +67,6 @@ function checkPasswordsMatch(input1, input2) {
     }
   }
 
-  // firebase.auth().onAuthStateChanged(function (user) {
-  //   if (user) {
-  //     alert('User is currently signed in')
-  //     // window.location.href = '../pages/post1.html';
-    
-  //   document.getElementById('logout').style.display='inline-block';
-  //   } else {
-  //     console.log('User not sign in');
-  //     alert('User is currently signed out')
-  //     document.getElementById('logout').style.display='none';
-  //   }
-  // });
-
 signUpBtn.addEventListener('click', e=>{
     e.preventDefault();
     var userEmail = document.getElementById('email').value;
@@ -88,7 +75,6 @@ signUpBtn.addEventListener('click', e=>{
     let lat;
     let long;
     if('geolocation' in navigator){
-      console.log('Location available')
       navigator.geolocation.getCurrentPosition(position=>{
         lat = position.coords.latitude
         long = position.coords.longitude
@@ -119,11 +105,7 @@ signUpBtn.addEventListener('click', e=>{
     alert('Signed in successfully');
   });
 
-//   const logout = document.querySelector('#logout');
-// logout.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   firebase.auth().signOut();
-// });
+
 
 
 
