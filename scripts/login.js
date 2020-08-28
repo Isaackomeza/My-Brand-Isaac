@@ -1,4 +1,4 @@
-const db = firebase.firestore();
+// const db = firebase.firestore();
 const provider = new firebase.auth.GoogleAuthProvider();
 
 // Show input error message
@@ -51,24 +51,24 @@ function checkEmail(input) {
 
 // Login form integration to firebase
 
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-      document.getElementById("user-field").style.display = "block";
-      document.getElementById("login").style.display = "none";
+// firebase.auth().onAuthStateChanged(function(user) {
+//     if (user) {
+//       // User is signed in.
+//       document.getElementById("user-field").style.display = "block";
+//       document.getElementById("login").style.display = "none";
 
-      var user = firebase.auth().currentUser;
-      if(user !=null){
-        var email_id = user.email;
-        document.getElementById('user_para').innerHTML = "Welcome : " + email_id
-      }
+//       var user = firebase.auth().currentUser;
+//       if(user !=null){
+//         var email_id = user.email;
+//         document.getElementById('user_para').innerHTML = "Welcome : " + email_id
+//       }
       
-    } else {
-      // No user is signed in.
-      document.getElementById("user-field").style.display = "none";
-      document.getElementById("login").style.display = "block";
-    }
-  });
+//     } else {
+//       // No user is signed in.
+//       document.getElementById("user-field").style.display = "none";
+//       document.getElementById("login").style.display = "block";
+//     }
+//   });
 
   function logIn(){
     var userEmail = document.getElementById('email').value;
@@ -132,8 +132,8 @@ firebase.auth().onAuthStateChanged(function(user) {
     });
   }
 
-  function logOut(){
-    firebase.auth().signOut();
-  }
+  // function logOut(){
+  //   firebase.auth().signOut();
+  // }
 
  

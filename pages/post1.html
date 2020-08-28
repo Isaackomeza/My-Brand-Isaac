@@ -19,7 +19,9 @@
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
                 <a href="blog.html">My Blog</a>
-                <a href="admin.html"><i class="fas fa-user-circle"></i></a>
+                <a class="logbtn" href="./login.html">Log In</a>
+                <a href="#" id="logoutBtn" class="d-none">Logout</a>
+                <a href="admin.html"><i class="fas fa-user-circle admin d-none"></i></a>
             </nav>
         </div>
         <div class="toggle-menu" onclick="toggle(this)">
@@ -112,6 +114,7 @@
         </div>
     </footer>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
     <script src="../scripts/auth.js"></script>
     <script src="../scripts/post1.js"></script>

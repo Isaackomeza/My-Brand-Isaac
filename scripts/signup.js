@@ -5,7 +5,7 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
 const signUpBtn = document.querySelector('#signupbtn');
-const db= firebase.firestore()
+// const db= firebase.firestore()
 db.collection("contact").get().then(info=>{
   console.log(info)
 })
@@ -67,18 +67,18 @@ function checkPasswordsMatch(input1, input2) {
     }
   }
 
-  firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
-      alert('User is currently signed in')
-      // window.location.href = '../pages/post1.html';
+  // firebase.auth().onAuthStateChanged(function (user) {
+  //   if (user) {
+  //     alert('User is currently signed in')
+  //     // window.location.href = '../pages/post1.html';
     
-    document.getElementById('logout').style.display='inline-block';
-    } else {
-      console.log('User not sign in');
-      alert('User is currently signed out')
-      document.getElementById('logout').style.display='none';
-    }
-  });
+  //   document.getElementById('logout').style.display='inline-block';
+  //   } else {
+  //     console.log('User not sign in');
+  //     alert('User is currently signed out')
+  //     document.getElementById('logout').style.display='none';
+  //   }
+  // });
 
 signUpBtn.addEventListener('click', e=>{
     e.preventDefault();
@@ -100,7 +100,7 @@ signUpBtn.addEventListener('click', e=>{
         username: userName,
         password: userPass,
         email: userEmail,
-        role:'admin',
+        role:'user',
         location: {
           latitude: lat,
           longitude: long
@@ -119,11 +119,13 @@ signUpBtn.addEventListener('click', e=>{
     form.reset();
   });
 
-  const logout = document.querySelector('#logout');
-logout.addEventListener('click', (e) => {
-  e.preventDefault();
-  firebase.auth().signOut();
-});
+//   const logout = document.querySelector('#logout');
+// logout.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   firebase.auth().signOut();
+// });
+
+
 
 
 
