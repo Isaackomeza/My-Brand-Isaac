@@ -2,6 +2,7 @@
 document.getElementById('admin-form').addEventListener('submit', submitBlog);
 const messagesUI= document.querySelector('.admin-messages');
 const blogUI = document.querySelector('#table');
+const usersUI= document.querySelector('#utable');
 
 function submitBlog(e){
   e.preventDefault();
@@ -77,6 +78,37 @@ const getUI=(data)=>{
 
 db.collection("contact").get().then(data=>{
     getUI(data.docs)
+})
+
+const getUUI=(data)=>{
+let userui=  `
+  <caption><b>Lists of Users</b></caption><br/>
+  <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Delete User</th>
+  </tr>`
+  data.forEach(item=>{
+      const user= item.data()
+      console.log(user)
+      const userUIFormat=`
+      <tr>
+        <td>${user.username}</td>
+        <td>${user.email}</td>
+        <td>${user.role}</td>
+        <td><p onclick="deleteUser(${item.id})" id="${item.id}">Delete</p></td>
+      </tr>
+     
+          `
+          userui+=userUIFormat
+  })
+  usersUI.innerHTML= userui
+  
+}
+
+db.collection("users").get().then(data=>{
+  getUUI(data.docs)
 })
 
 

@@ -641,12 +641,16 @@ border-radius: 5px;
 .nav span{
 text-transform:  capitalize !important;
 }
-#table{
+#table, #utable{
 vertical-align: middle;
 width: 60vw;
 font-size: 18px;
 border-radius: 5px;
 
+}
+td p{
+    color: red;
+    cursor: pointer;
 }
 
 th,

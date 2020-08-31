@@ -1,4 +1,4 @@
-const db = firebase.firestore();
+
 document.getElementById('contactForm').addEventListener('submit', submitForm);
 
 function submitForm(e){
