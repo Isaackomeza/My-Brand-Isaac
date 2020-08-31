@@ -73,7 +73,7 @@ background-color: rgb(180, 122, 122);
 /*Nav menu End*/
 
 #bg{
-width: 100%;
+width: 100vw;
 height: 100vh;
 position: fixed;
 z-index: -1;
@@ -266,8 +266,13 @@ width: 60%;
 .skill-intro h1, h2, p{
 margin-bottom: 2rem;
 }
+.skill-intro p{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2C3E50;
+}
 .skills-container{
-padding: 3rem;
+padding: 2rem;
 }
 .skills-container{
 background-color: whitesmoke;
@@ -290,6 +295,9 @@ text-transform: uppercase;
 .skill-title{
 display: flex;
 margin-bottom: 1rem;
+}
+.skill-title img{
+    border-radius: 5px;
 }
 .skills > div{
 background-color: white;
@@ -809,11 +817,11 @@ border-radius: 10px;
     flex-direction: column;
     flex-basis: 0em;
     right: 0%;
-    width: 30%;
+    width: 40%;
     background: #17202A;
-    height: 65vh;
-    padding: 2em;
-    line-height: 5em;
+    height: 45vh;
+    padding: 40px;
+    line-height: 4em;
     
     }
     .nav > a {
@@ -829,6 +837,7 @@ border-radius: 10px;
     }
     .real-me > div{
     padding: 1rem;
+    
     }
     .intro{
     display: block;
@@ -844,6 +853,17 @@ border-radius: 10px;
     footer{
     display: inline-block;
     }
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3em;
+        }
+    .skills-icon{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3em;
+        width: 100%;
+        }
     .copy{
     text-align: center;
     }
@@ -851,7 +871,7 @@ border-radius: 10px;
     font-size: 1em;
     }
     .nav.change {
-    padding: 2em 0em;
+    padding: 2em 1em;
     }
 
 }
