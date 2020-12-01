@@ -41,20 +41,7 @@ const getBlogUI = (data)=>{
           </form>           
         </div>
       </div>   
-        <div>
-            <div class="latest-comment">
-                <div class="argment">
-                    <div>
-                        <h3>Peter</h3>
-                    </div>
-                    <div class="feeling">
-                        <i class="icon fas fa-thumbs-up"></i><span>0</span>
-                        <i class=" icon fas fa-thumbs-down"></i><span>0</span>
-                        <i class="icon fas fa-reply"></i><span>0</span> 
-                    </div>
-                </div>
-                <textarea name="" id="" cols="30" rows="10">This is a wonderful topic I liked it. Vel turpis nunc eget lorem. Congue quisque egestas diam in arcu cursus euismod quis viverra.</textarea>
-          </div>
+      
     </div>
       `
       ui+=blogUIFormat

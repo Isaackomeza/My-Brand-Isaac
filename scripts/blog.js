@@ -1,4 +1,3 @@
-const db = firebase.firestore();
 const blogUI = document.querySelector('.articles');
 
 // Get blog ui summary
@@ -6,7 +5,7 @@ const blogUI = document.querySelector('.articles');
     let ui="";
     data.forEach(item=>{
     const blog= item.data()
-      const description =blog.description.slice(0,200)
+      const description = blog.description.slice(233, 475)
       //console.log(item.id)
       console.log(blog);
       let blogUIFormat =`
