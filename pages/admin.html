@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Admin's Page</title>
 </head>
+
 <body class="admin-wrapper">
     <header>
         <div class="brand">
@@ -32,53 +34,53 @@
     <div class="admin-container">
         <div class="admin-intro">
             <div><img src="../assets/images/avatar.jpg" alt="Avatar"></div>
-            <div><button>Edit Profile</button></div>  
+            <div><button>Edit Profile</button></div>
         </div>
         <div class="table-container">
-            <table  cellspacing="0" id="table">
+            <table cellspacing="0" id="table">
                 <caption><b>Lists of Blogs</b></caption><br/>
-                    <tr>
-                        <th>Blog Title</th>
-                        <th>Date of Publication</th>
-                        <th>Edit Blog</th>
-                        <th>Delete Blog</th>
-                    </tr>
-                    
-                    <tr class="table-container-tr">
-                        <td>How can You Learn Javascript in 2 months</td>
-                        <td>05<sup>th</sup>-08-2020, 21:05</td>
-                        <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png"/></td>
-                        <td><img src="https://img.icons8.com/color/48/000000/delete-forever.png"/></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Why is it important to do sport</td>
-                        <td>05<sup>th</sup>-08-2020, 21:05</td>
-                        <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png"/></td>
-                        <td><img src="https://img.icons8.com/color/48/000000/delete-forever.png"/></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>How can I prevent Covid-19 infection</td>
-                        <td>05<sup>th</sup>-08-2020, 21:05</td>
-                        <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png"/></td>
-                        <td><img src="https://img.icons8.com/color/48/000000/delete-forever.png"/></td>
-                    </tr>
+                <tr>
+                    <th>Blog Title</th>
+                    <th>Date of Publication</th>
+                    <th>Edit Blog</th>
+                    <th>Delete Blog</th>
+                </tr>
+
+                <tr class="table-container-tr">
+                    <td>How can You Learn Javascript in 2 months</td>
+                    <td>05<sup>th</sup>-08-2020, 21:05</td>
+                    <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png" /></td>
+                    <td><img src="https://img.icons8.com/color/48/000000/delete-forever.png" /></td>
+                </tr>
+
+                <tr>
+                    <td>Why is it important to do sport</td>
+                    <td>05<sup>th</sup>-08-2020, 21:05</td>
+                    <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png" /></td>
+                    <td><img src="https://img.icons8.com/color/48/000000/delete-forever.png" /></td>
+                </tr>
+
+                <tr>
+                    <td>How can I prevent Covid-19 infection</td>
+                    <td>05<sup>th</sup>-08-2020, 21:05</td>
+                    <td><img src="https://img.icons8.com/cotton/50/000000/edit--v2.png" /></td>
+                    <td><img src="https://img.icons8.com/color/48/000000/delete-forever.png" /></td>
+                </tr>
             </table>
         </div>
-        <div class="btn-div"><button onclick="display()"; id="displayed">Add New Article</button></div>
+        <div class="btn-div"><button onclick="display()" ; id="displayed">Add New Article</button></div>
         <div class="admin-form-container" id="admin-form-container">
-            
+
             <form action="" class="admin-form" id="admin-form">
                 <div class="input-area">
                     <div>
                         <div>
                             <label for="author">Author</label>
-                            <input id="author"  type="text" placeholder="Put Author's name here"><br>
+                            <input id="author" type="text" placeholder="Put Author's name here"><br>
                         </div>
                         <div>
                             <label for="title">Blog Title</label>
-                            <input type="text" placeholder="Write a blog Title here" id="blog-title" ><br>
+                            <input type="text" placeholder="Write a blog Title here" id="blog-title"><br>
                         </div>
                     </div>
 
@@ -99,11 +101,11 @@
                     <div>
                         <div>
                             <label for="author">Update Author</label>
-                            <input id="update-author"  type="text" placeholder="Put Author's name here"><br>
+                            <input id="update-author" type="text" placeholder="Put Author's name here"><br>
                         </div>
                         <div>
                             <label for="title">Update Blog Title</label>
-                            <input type="text" placeholder="Write a blog Title here" id="update-blog-title" ><br>
+                            <input type="text" placeholder="Write a blog Title here" id="update-blog-title"><br>
                         </div>
                     </div>
 
@@ -113,28 +115,29 @@
                 </div>
                 <label for="blog">Update Blog Description</label>
                 <textarea name="blog" id="update-blog-description" cols="30" rows="10" placeholder="Write a full description of your blog"></textarea>
-                <button type="submit" onclick="update()";>Update Article</button>
+                <button type="submit" onclick="update()" ;>Update Article</button>
             </form>
         </div>
         <div class="admin-messages"></div>
-            <div class="table-container">
-                <table  cellspacing="0" id="utable">
-    
-                </table>
-            </div>
+        <div class="table-container">
+            <table cellspacing="0" id="utable">
+
+            </table>
+        </div>
     </div>
     <footer>
         <div class="location">
-            <span>LOCATION</span><br><hr>
+            <span>LOCATION</span><br>
+            <hr>
             <span>KG 11 Ave,</span><br>
             <span>Kigali/Rwanda</span><b></b>
         </div>
         <div class="copy">Copyright © Isaac 2020</div>
         <div class="data">
             <span>FOLLOW ME :</span><br><br>
-            <a href="https://www.linkedin.com/in/isaac-komezusenge-2bba21175/" target="_blank"><i class="fab fa-2x fa-fw fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/isaac-komezusenge/" target="_blank"><i class="fab fa-2x fa-fw fa-linkedin-in"></i></a>
             <a href="https://web.facebook.com/komezusenge.isaac.7" target="_blank"><i class="fab fa-2x fa-fw fa-facebook"></i></a>
-            <a href="https://twitter.com/IsaacLee03" target="_blank"><i class="fab fa-2x fa-fw fa-twitter"></i></a>
+            <a href="https://twitter.com/Isaackomeza" target="_blank"><i class="fab fa-2x fa-fw fa-twitter"></i></a>
             <a href="https://github.com/Isaackomeza/" target="_blank"><i class="fab fa-2x fa-fw fa-github"></i></a>
         </div>
     </footer>
@@ -149,4 +152,5 @@
         AOS.init();
     </script>
 </body>
+
 </html>

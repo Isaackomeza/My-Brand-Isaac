@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.svg">
     <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Login Form</title>
 </head>
+
 <body>
     <div class="login-container">
         <header>
@@ -19,7 +22,7 @@
                     <a href="skills.html">Services</a>
                     <a href="contact.html">Contact</a>
                     <a href="blog.html">My Blog</a>
-                    <a href="signup.html">sign up</a>                   
+                    <a href="signup.html">sign up</a>
                 </nav>
             </div>
             <div class="toggle-menu" onclick="toggle(this)">
@@ -28,56 +31,57 @@
                 <div class="bar3"></div>
             </div>
         </header>
-        <div class="login-form" >
+        <div class="login-form">
             <div id="login">
-              <h1>Log In Form</h1><br>
-              <form action=""id="login" >
-                   <div class="form-div">
-                    <label for="email">Email:</label><br>
-                    <input type="text" placeholder="Enter Username" id="email">
-                    <small>Error message</small><br><br>
-                   </div>
-                   <div class="form-div">
-                    <label for="password">Password:</label><br>
-                    <input type="password" placeholder="Enter Password" id="password">
-                    <small>Error message</small><br><br>
-                   </div>
+                <h1>Log In Form</h1><br>
+                <form action="" id="login">
+                    <div class="form-div">
+                        <label for="email">Email:</label><br>
+                        <input type="text" placeholder="Enter Username" id="email">
+                        <small>Error message</small><br><br>
+                    </div>
+                    <div class="form-div">
+                        <label for="password">Password:</label><br>
+                        <input type="password" placeholder="Enter Password" id="password">
+                        <small>Error message</small><br><br>
+                    </div>
 
-                   <button id="loginbtn" onclick="logIn(); return false;" >Log In</button><br><br>
-              </form> 
+                    <button id="loginbtn" onclick="logIn(); return false;">Log In</button><br><br>
+                </form>
 
-               <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-               <p>Or Log In with:</p>
-           <section class="account">  
-               <span><i class="fab fa-2x fa-facebook"></i></span>
-               <span><i class="fab fa-2x fa-twitter"></i></span>
-               <span><i class="fab fa-2x fa-google" onclick="googleLogIn(); return false;"></i></span>
-           </section>
-            </div>  
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                <p>Or Log In with:</p>
+                <section class="account">
+                    <span><i class="fab fa-2x fa-facebook"></i></span>
+                    <span><i class="fab fa-2x fa-twitter"></i></span>
+                    <span><i class="fab fa-2x fa-google" onclick="googleLogIn(); return false;"></i></span>
+                </section>
+            </div>
 
-          <div id="user-field">
-              <h2>WELCOME USER</h2>
-              <p id="user_para">Welcome,</p>
-              <p>YOU ARE CURRENTLY LOGGED IN !!</p>
-              <p>Click <a href="post1.html">Here</a> To see my Blog</p>
-              <button  id="logoutbtn" onclick="logOut()">Logout</button>
-          </div>
-      </div>
-            <footer>
-                <div class="location">
-                    <span>LOCATION</span><br><hr>
-                    <span>KG 11 Ave,</span><br>
-                    <span>Kigali/Rwanda</span><b></b>
-                </div>
-                <div class="copy">Copyright © Isaac 2020</div>
-                <div class="data">
-                    <span>FOLLOW ME</span><br><br>
-                    <a href="https://www.linkedin.com/in/isaac-komezusenge-2bba21175/" target="_blank"><i class="fab fa-2x fa-fw fa-linkedin-in"></i></a>
-                    <a href="https://web.facebook.com/komezusenge.isaac.7" target="_blank"><i class="fab fa-2x fa-fw fa-facebook"></i></a>
-                    <a href="https://twitter.com/IsaacLee03" target="_blank"><i class="fab fa-2x fa-fw fa-twitter"></i></a>
-                    <a href="https://github.com/Isaackomeza/" target="_blank"><i class="fab fa-2x fa-fw fa-github"></i></a>
-                </div>
-            </footer>
+            <div id="user-field">
+                <h2>WELCOME USER</h2>
+                <p id="user_para">Welcome,</p>
+                <p>YOU ARE CURRENTLY LOGGED IN !!</p>
+                <p>Click <a href="post1.html">Here</a> To see my Blog</p>
+                <button id="logoutbtn" onclick="logOut()">Logout</button>
+            </div>
+        </div>
+        <footer>
+            <div class="location">
+                <span>LOCATION</span><br>
+                <hr>
+                <span>KG 11 Ave,</span><br>
+                <span>Kigali/Rwanda</span><b></b>
+            </div>
+            <div class="copy">Copyright © Isaac 2022</div>
+            <div class="data">
+                <span>FOLLOW ME</span><br><br>
+                <a href="https://www.linkedin.com/in/isaac-komezusenge/" target="_blank"><i class="fab fa-2x fa-fw fa-linkedin-in"></i></a>
+                <a href="https://web.facebook.com/komezusenge.isaac.7" target="_blank"><i class="fab fa-2x fa-fw fa-facebook"></i></a>
+                <a href="https://twitter.com/Isaackomeza" target="_blank"><i class="fab fa-2x fa-fw fa-twitter"></i></a>
+                <a href="https://github.com/Isaackomeza/" target="_blank"><i class="fab fa-2x fa-fw fa-github"></i></a>
+            </div>
+        </footer>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
@@ -87,4 +91,5 @@
     <script src="../scripts/login.js"></script>
     <script src="../scripts/script.js"></script>
 </body>
+
 </html>

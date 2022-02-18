@@ -5,12 +5,12 @@ const blogUI = document.querySelector('.post-container');
 
 // Getting blog UI from firebase
 
-const getBlogUI = (data)=>{
-    let ui= '';
-    data.forEach(item=>{
-      const blog =item.data();
-      console.log(blog);
-      let blogUIFormat =`
+const getBlogUI = (data) => {
+    let ui = '';
+    data.forEach(item => {
+        const blog = item.data();
+        console.log(blog);
+        let blogUIFormat = `
     <div class="published-blog">
       <div class="post-title">
           <i class="fas fa-2x fa-edit"></i>
@@ -44,35 +44,35 @@ const getBlogUI = (data)=>{
       
     </div>
       `
-      ui+=blogUIFormat
+        ui += blogUIFormat
     })
     blogUI.innerHTML = ui
-  }
+}
 
 
 
-  db.collection("Blogs").get().then(info=>{
+db.collection("Blogs").get().then(info => {
     getBlogUI(info.docs)
 });
 
 // Integrating comment form with firebase
 
-function submitComment(){
+function submitComment() {
 
-  
+
     // Get values
     var commentName = getInputVal('comment-name');
     var commentEmail = getInputVal('comment-email');
     var commentMessage = getInputVal('comment-message');
-    
+
     // save message
     saveComment(commentName, commentEmail, commentMessage);
     // show alert
     document.querySelector('.comment-alert').style.display = 'block';
-    
+
     // Hide alert after 3 seconds
-    setTimeout(function(){
-      document.querySelector('.comment-alert').style.display = 'none';
+    setTimeout(function() {
+        document.querySelector('.comment-alert').style.display = 'none';
     }, 3000);
 
     // Clear Form
@@ -80,20 +80,19 @@ function submitComment(){
 }
 
 // Function to get form values
-function getInputVal(id){
-  return document.getElementById(id).value;
-  }
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
 
-  function saveComment(a, b, c){
+function saveComment(a, b, c) {
     db.collection('Comments').doc().set({
-      name: a,
-      email: b,
-      comment: c,
-    }).then(function (){
-      console.log('Comment is saved');
-    }).catch(function(err){
-      console.log('Comment is not saved');
+        name: a,
+        email: b,
+        comment: c,
+    }).then(function() {
+        console.log('Comment is saved');
+    }).catch(function(err) {
+        console.log('Comment is not saved');
     })
-    
-    }
 
+}
