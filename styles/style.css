@@ -157,6 +157,11 @@ body::after {
     color: white;
 }
 
+#about a:hover {
+    background-color: #5495DE;
+    /* border-color: #5495DE; */
+}
+
 .real-me {
     display: flex;
     justify-content: space-evenly;
@@ -169,6 +174,23 @@ body::after {
     box-shadow: 0 3px 5px rgb(26, 25, 25);
     border-radius: 2em;
     background-color: #5495DE;
+}
+
+@media only screen and (max-width: 767px) {
+    .real-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 4rem 0;
+    }
+    .real-me>div {
+        width: 90%;
+        padding: 3rem;
+        margin: 1.5rem;
+        box-shadow: 0 3px 5px rgb(26, 25, 25);
+        border-radius: 2em;
+        background-color: #5495DE;
+    }
 }
 
 footer {
@@ -303,6 +325,14 @@ footer {
     margin: 0 auto;
     text-align: center;
     width: 60%;
+}
+
+@media only screen and (max-width: 767px) {
+    .skill-intro {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
 }
 
 .skill-intro h1,
@@ -973,6 +1003,7 @@ textarea:focus {
         display: inline-block;
         top: 18%;
         right: 5%;
+        cursor: pointer;
     }
     .real-me>div {
         padding: 1rem;
