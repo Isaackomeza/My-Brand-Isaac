@@ -51,7 +51,7 @@ const getBlogUI = (data) => {
 
 
 
-db.collection("Blogs").get().then(info => {
+db.collection("Blogs").orderBy("date").get().then(info => {
     getBlogUI(info.docs)
 });
 
